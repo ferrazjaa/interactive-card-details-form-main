@@ -8,34 +8,68 @@
   
   <title>Frontend Mentor | Interactive card details form</title>
 
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="assets\css\reset.css">
   <link rel="stylesheet" href="assets\css\base.css">
+  <link rel="stylesheet" href="assets\css\cartao.css">
+  <link rel="stylesheet" href="assets\forms.css">
+  
   <link rel="stylesheet" href="assets\css\footer.css">
+
 
 
 </head>
 <body>
 
-  <form action="">
-    <label for="">Cardholder Name</label>
-    <input type="text" name="" id="" placeholder="e.g. Jane Appleseed">
+  <section class="card-display" aria-labelledby="card-section-heading">
+    <h1 id="card-section-heading" hidden>Card Display</h1>
+    <figure class="card">
+      <img src="assets/images/bg-card-back.png" alt="Background da parte de trás do cartão" class="backcard">
+      <figcaption hidden>Parte de trás do cartão</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="assets/images/bg-card-front.png" alt="Background da parte frontal do cartão" class="frontcard">
+      <figcaption hidden>Parte frontal do cartão</figcaption>
+    </figure>
+  </section>
 
-    <label for="">Card Number</label>
-    <input type="number" name="" id="" placeholder="e.g. 1234 5678 9123 0000" max="16">
+  <form action="" class="card-form" aria-labelledby="form-heading">
+    <h2 id="form-heading">Informações do Cartão</h2>
 
-    <label for="">Exp. Date (MM/YY)</label>
-    <input type="number" name="" id="" max="2" placeholder="MM">
+    <div class="form-group">
+      <label for="cardholder-name">Cardholder Name</label>
+      <input type="text" name="cardholder-name" id="cardholder-name" placeholder="e.g. Jane Appleseed">
+    </div>
 
-    <label for="ano" hidden></label>
-    <input type="number" name="ano" id="ano" placeholder="YY">
+    <div class="form-group">
+      <label for="card-number">Card Number</label>
+      <input type="text" name="card-number" id="card-number" placeholder="e.g. 1234 5678 9123 0000" maxlength="19">
+    </div>
 
-    <label for="cvc">CVC</label>
-    <input type="number" name="cvc" id="cvc" placeholder="e.g. 123">
+    <div class="form-group">
+      <label for="exp-date-mm">Exp. Date (MM/YY)</label>
+      <div class="exp-date">
+        <input type="text" name="exp-date-mm" id="exp-date-mm" placeholder="MM" maxlength="2">
+        <input type="text" name="exp-date-yy" id="exp-date-yy" placeholder="YY" maxlength="2">
+      </div>
 
-    <input type="button" value="Confirm">
+      <label for="cvc">CVC</label>
+      <input type="text" name="cvc" id="cvc" placeholder="e.g. 123" maxlength="3">
+    </div>
 
+
+    <div class="form-group">
+      <button type="submit" class="btn-confirm">Confirm</button>
+    </div>
 
   </form>
+
+</body>
   0000 0000 0000 0000
   Jane Appleseed
   00/00

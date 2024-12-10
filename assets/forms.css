@@ -1,0 +1,9 @@
+label{
+    color: var(--color-vdark-violet);
+    text-transform: capitalize;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,7 +1,26 @@
-:root{
-    --color-white: hsl(0, 0%, 100%)
-    --color-lgrayish-violet: hsl(270, 3%, 87%)
-    --color-dgrayish-violet: hsl(279, 6%, 55%)
-    --color-vdark-violet: hsl(278, 68%, 11%)
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --color-lgrayish-violet: hsl(270, 3%, 87%);
+    --color-dgrayish-violet: hsl(279, 6%, 55%);
+    --color-vdark-violet: hsl(278, 68%, 11%);
+
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@media screen and (max-width:768px) {
+    body {
+        flex-direction: column;
+    }
 
 }

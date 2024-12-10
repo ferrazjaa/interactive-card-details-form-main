@@ -1,0 +1,20 @@
+/* CSS DO CARTÃO E BACKGROUND REFERENTE */
+
+@media screen and (min-width:0) {
+    .card-display{
+        background-image: url("../images/bg-main-mobile.png");
+        width: 100%;
+    }
+    
+    /* .frontcard{
+        margin: 1rem 2rem 1rem auto;
+        position: absolute;
+        width: inherit;
+        z-index: 10;
+        top: 8rem !important;
+    }
+
+    .frontcard, .backcard {
+        transform: scale(.76) !important;
+    } */
+}
